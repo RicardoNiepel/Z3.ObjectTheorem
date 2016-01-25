@@ -75,8 +75,8 @@ Z3.ObjectTheorem treated navigation properties the same way as value type proper
 // Arrange
 var objectTheorem = new ObjectTheoremContext();
 
-var typeInstance1 = objectTheorem.CreateInstance<(*@\tc{Category}@*)>("TypeInstance1");
-var typeInstance2 = objectTheorem.CreateInstance<(*@\tc{Category}@*)>("TypeInstance2");
+var typeInstance1 = objectTheorem.CreateInstance<Category>("TypeInstance1");
+var typeInstance2 = objectTheorem.CreateInstance<Category>("TypeInstance2");
 var fieldInstance1 = objectTheorem.CreateInstance<Product>("FieldInstance1");
 
 // Act
@@ -116,7 +116,7 @@ objectTheorem.ConstraintBuilder
 
 // Assert
 var solved = objectTheorem.Solve();
-(*@\tc{Assert}@*).IsNotNull(solved);
+Assert.IsNotNull(solved);
 
 int bicycle1Speed = solved.GetValue(bicycleInstance1, i => i.Speed);
 int bicycle2Speed = solved.GetValue(bicycleInstance2, i => i.Speed);
@@ -162,3 +162,5 @@ Assert.AreEqual(Status.Satisfiable, solved.Status);
 bool isFast1 = solved.GetValue(carInstance1, c => c.IsFast);
 Assert.IsTrue(isFast1);
 ```
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/RicardoNiepel/z3.objecttheorem/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
