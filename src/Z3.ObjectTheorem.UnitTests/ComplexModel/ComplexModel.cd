@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Z3.ObjectTheorem.UnitTests.ComplexModel.Category">
+    <Position X="3" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>ComplexModel\Category.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Products" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Z3.ObjectTheorem.UnitTests.ComplexModel.Product">
+    <Position X="8" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>ComplexModel\Product.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Category" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

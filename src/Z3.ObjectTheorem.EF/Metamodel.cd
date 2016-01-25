@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Z3.ObjectTheorem.EF.Metamodel.Field">
+    <Position X="5.5" Y="9.25" Width="2.5" />
+    <AssociationLine Name="Owner" Type="Z3.ObjectTheorem.EF.Metamodel.ReferenceType" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="9.616" />
+        <Point X="4" Y="9.616" />
+        <Point X="4" Y="3.375" />
+        <Point X="4.75" Y="3.375" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.112" Y="0.12" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAQAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Metamodel\Field.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Owner" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Z3.ObjectTheorem.EF.Metamodel.ReferenceField">
+    <Position X="5.5" Y="7.5" Width="1.5" />
+    <InheritanceLine Type="Z3.ObjectTheorem.EF.Metamodel.Field" ManuallyRouted="true">
+      <Path>
+        <Point X="6.75" Y="9.25" />
+        <Point X="6.75" Y="8.977" />
+        <Point X="6.25" Y="8.977" />
+        <Point X="6.25" Y="8.497" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Metamodel\ReferenceField.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Z3.ObjectTheorem.EF.Metamodel.ReferenceType">
+    <Position X="4.75" Y="2.75" Width="2.5" />
+    <AssociationLine Name="SingleFields" Type="Z3.ObjectTheorem.EF.Metamodel.SingleField">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-2.005" Y="0.268" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="CollectionFields" Type="Z3.ObjectTheorem.EF.Metamodel.CollectionField">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.11" Y="0.102" Height="0.182" Width="3.001" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="ValueFields" Type="Z3.ObjectTheorem.EF.Metamodel.ValueField" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.25" Y="3.438" />
+        <Point X="8" Y="3.438" />
+        <Point X="8" Y="3.997" />
+        <Point X="8.773" Y="3.997" />
+        <Point X="8.773" Y="6.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-2.304" Y="0.432" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAgAAAAAAAAEAAAAAAAAAAAAAAIAAABgAAAA=</HashCode>
+      <FileName>Metamodel\ReferenceType.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="SingleFields" />
+      <Property Name="CollectionFields" />
+      <Property Name="ValueFields" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Z3.ObjectTheorem.EF.Metamodel.Type">
+    <Position X="6.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Metamodel\Type.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Z3.ObjectTheorem.EF.Metamodel.ValueField">
+    <Position X="8" Y="6.75" Width="2.75" />
+    <InheritanceLine Type="Z3.ObjectTheorem.EF.Metamodel.Field" FixedFromPoint="true">
+      <Path>
+        <Point X="6.75" Y="9.25" />
+        <Point X="6.75" Y="8.977" />
+        <Point X="9.375" Y="8.977" />
+        <Point X="9.375" Y="8.752" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="Type" Type="Z3.ObjectTheorem.EF.Metamodel.ValueType">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.661" Y="0.154" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="DatabaseGeneratedAttribute" Type="Z3.ObjectTheorem.EF.Metamodel.DatabaseGeneratedAttribute">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.648" Y="0.172" Height="0.182" Width="2.118" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAEAAAAAAAAEIAAAAABAAAAIAAQAAAAAAAAA=</HashCode>
+      <FileName>Metamodel\ValueField.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+      <Property Name="DatabaseGeneratedAttribute" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Z3.ObjectTheorem.EF.Metamodel.ValueType">
+    <Position X="8.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Metamodel\ValueType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Z3.ObjectTheorem.EF.Metamodel.SingleField">
+    <Position X="6.25" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Metamodel\SingleField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Z3.ObjectTheorem.EF.Metamodel.CollectionField">
+    <Position X="4.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Metamodel\CollectionField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Z3.ObjectTheorem.EF.Metamodel.DatabaseGeneratedAttribute">
+    <Position X="8.5" Y="9.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAEAAAAEAAAA=</HashCode>
+      <FileName>Metamodel\DatabaseGeneratedAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
